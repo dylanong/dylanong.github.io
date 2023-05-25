@@ -84,11 +84,12 @@ h2{
   width: 200px;
   height: 200px;
   margin: auto;
-  background-color: #21d4fd;
-  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  /* background-color: #21d4fd; */
+  /* background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%); */
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
   animation: morphing 5s infinite;
+  transition: 300ms;
   overflow: hidden;
 }
 
@@ -99,12 +100,15 @@ h2{
 @keyframes morphing {
   0% {
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    /* background-color: black; */
   }
   25% {
     border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    /* background-color: blue; */
   }
   50% {
     border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    /* background-color: red; */
   }
   75% {
     border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
